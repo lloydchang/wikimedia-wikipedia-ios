@@ -288,7 +288,7 @@ extension WMFAppViewController: WKWatchlistDelegate {
         }
     }
 
-    private func displayAddLanguageSettingsForWatchlistFilters(from viewController: UIViewController, completion: @escaping () -> Void) {
+    public func displayAddLanguageSettingsForWatchlistFilters(from viewController: UIViewController, completion: @escaping () -> Void) {
         let languagesVC = WMFPreferredLanguagesViewController.preferredLanguagesViewController()
         languagesVC.showExploreFeedCustomizationSettings = false
         languagesVC.userDismissalCompletionBlock = completion
